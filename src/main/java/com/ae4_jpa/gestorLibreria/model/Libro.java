@@ -10,8 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "libros")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@ToString(exclude = {"autores", "editorial"})
 public class Libro {
 
     @Id

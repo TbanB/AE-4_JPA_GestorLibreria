@@ -9,8 +9,7 @@ import java.util.List;
 @Entity
 @Table(name = "editoriales")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@ToString(exclude = "libros")
 public class Editorial {
 
     @Id
